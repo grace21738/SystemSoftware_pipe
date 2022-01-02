@@ -1,0 +1,80 @@
+Script started on 2022-01-02 17:34:35+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="139" LINES="24"]
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ./sender p1f.mpg 7777 1234 100make[Kgit pushcommit -m "finish"[12Padd -u./sender p1f.mpg 7777 1234 100[20Pgit add -ucommit -m "finish"push[K[4Pmake./sender p1f.mpg 7777 1234 100[K./sender p1f.mpg 7777 1234 100make[Kgit push[4Pmake./sender p1f.mpg 7777 1234 100[Kgcc hw03 [K.c -o hw03
+[01m[Khw03.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khw03.c:26:7:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kpipe[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   26 |  if ( [01;35m[Kpipe[m[K ( pfd_1 ) == ERR )
+      |       [01;35m[K^~~~[m[K
+[01m[Khw03.c:29:6:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   29 |      [01;35m[Kexit[m[K (ERR);
+      |      [01;35m[K^~~~[m[K
+[01m[Khw03.c:29:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khw03.c:5:1:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+    4 | #include <sys/stat.h>
+  +++ |+[32m[K#include <stdlib.h>[m[K
+    5 | 
+[01m[Khw03.c:35:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+   35 |      [01;35m[Kexit[m[K (ERR);
+      |      [01;35m[K^~~~[m[K
+[01m[Khw03.c:35:6:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khw03.c:39:16:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kfork[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   39 |  if (( pid_1 = [01;35m[Kfork[m[K () ) == ERR)        /* create 1st child   */
+      |                [01;35m[K^~~~[m[K
+[01m[Khw03.c:42:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+   42 |      [01;35m[Kexit[m[K (ERR);
+      |      [01;35m[K^~~~[m[K
+[01m[Khw03.c:42:6:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khw03.c:49:7:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+   49 |       [01;35m[Kexit[m[K (ERR);
+      |       [01;35m[K^~~~[m[K
+[01m[Khw03.c:49:7:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khw03.c:55:12:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+   55 |            [01;35m[Kexit[m[K (ERR);
+      |            [01;35m[K^~~~[m[K
+[01m[Khw03.c:55:12:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khw03.c:58:11:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kclose[m[K’; did you mean ‘[01m[Kpclose[m[K’? [[01;35m[K-Wimplicit-function-declaration[m[K]
+   58 |           [01;35m[Kclose[m[K ( pfd_1 [READ] );         /* close pipe in parent */
+      |           [01;35m[K^~~~~[m[K
+      |           [32m[Kpclose[m[K
+[01m[Khw03.c:62:11:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Ksystem[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   62 |           [01;35m[Ksystem[m[K("ps aux|grep cn2021|wc");
+      |           [01;35m[K^~~~~~[m[K
+[01m[Khw03.c:63:11:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kwait[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   63 |           [01;35m[Kwait[m[K (( int * ) 0);           /* wait for children to die */
+      |           [01;35m[K^~~~[m[K
+[01m[Khw03.c:69:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kdup[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   69 |             [01;35m[Kdup[m[K ( pfd_2 [READ] );      /* read end of pipe becomes stdin */
+      |             [01;35m[K^~~[m[K
+[01m[Khw03.c:77:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexecl[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+   77 |             [01;35m[Kexecl[m[K ("/usr/bin/wc", "wc", (char *) NULL);
+      |             [01;35m[K^~~~~[m[K
+[01m[Khw03.c:77:13:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexecl[m[K’
+[01m[Khw03.c:89:13:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexecl[m[K’
+   89 |             [01;35m[Kexecl[m[K ("/usr/bin/grep", "grep", "cn2021",(char *) NULL);
+      |             [01;35m[K^~~~~[m[K
+[01m[Khw03.c:100:6:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexecl[m[K’
+  100 |      [01;35m[Kexecl[m[K ("/usr/bin/ps", "ps", "aux",(char *) NULL);
+      |      [01;35m[K^~~~~[m[K
+[01m[Khw03.c:102:2:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+  102 |  [01;35m[Kexit[m[K (0);
+      |  [01;35m[K^~~~[m[K
+[01m[Khw03.c:102:2:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ls
+40771107H_script_hw03  [0m[01;32mhw03[0m  hw03.c  teacher.c
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ./hw03
+    113    1623   14956
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ./hw03[Kls
+40771107H_script_hw03  [0m[01;32mhw03[0m  hw03.c  teacher.c  the_result
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ls./hw03[4Plsgcc hw03.c -o hw03./sender p1f.mpg 7777 1234 100make[Kgit pushcommit -m "finish"[12Padd -u./sender p1f.mpg 7777 1234 100[2@video[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pp1f[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Pgit add -ucommit -m "finish"push[K[4Pmake./sender p1f.mpg 7777 1234 100[12Pgcc hw03.c -o hw03ls[K./hw03[4Pls[Kcat the_result 
+    109    1573   14638
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ cat the_result ls[K./hw03
+    113    1624   14981
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ./hw03cat the_result ls[Kcat the_result 
+    113    1623   14956
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ cat the_result [9P./hw03
+    114    1634   15052
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ ./hw03cat the_result 
+    114    1634   15052
+]0;cn2021@cn2021-VirtualBox: ~/Desktop/OS[01;32mcn2021@cn2021-VirtualBox[00m:[01;34m~/Desktop/OS[00m$ exit
+exit
+
+Script done on 2022-01-02 17:35:46+08:00 [COMMAND_EXIT_CODE="0"]
