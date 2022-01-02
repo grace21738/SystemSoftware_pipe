@@ -1,0 +1,90 @@
+Script started on 2022-01-02 17:34:35+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="139" LINES="24"]
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ./sender p1f.mpg 7777 
+gcc hw03.c -o hw03
+hw03.c: In function ‘main’:
+hw03.c:26:7: warning: implicit declaration of function ‘pipe’ [-Wimplicit-function-declaration
+]
+   26 |  if ( pipe ( pfd_1 ) == ERR )
+      |       ^~~~
+hw03.c:29:6: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration
+]
+   29 |      exit (ERR);
+      |      ^~~~
+hw03.c:29:6: warning: incompatible implicit declaration of built-in function ‘exit’
+hw03.c:5:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+    4 | #include <sys/stat.h>
+  +++ |+#include <stdlib.h>
+    5 | 
+hw03.c:35:6: warning: incompatible implicit declaration of built-in function ‘exit’
+   35 |      exit (ERR);
+      |      ^~~~
+hw03.c:35:6: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+hw03.c:39:16: warning: implicit declaration of function ‘fork’ [-Wimplicit-function-declaration
+]
+   39 |  if (( pid_1 = fork () ) == ERR)        /* create 1st child   */
+      |                ^~~~
+hw03.c:42:6: warning: incompatible implicit declaration of built-in function ‘exit’
+   42 |      exit (ERR);
+      |      ^~~~
+hw03.c:42:6: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+hw03.c:49:7: warning: incompatible implicit declaration of built-in function ‘exit’
+   49 |       exit (ERR);
+      |       ^~~~
+hw03.c:49:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+hw03.c:55:12: warning: incompatible implicit declaration of built-in function ‘exit’
+   55 |            exit (ERR);
+      |            ^~~~
+hw03.c:55:12: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+hw03.c:58:11: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [
+-Wimplicit-function-declaration]
+   58 |           close ( pfd_1 [READ] );         /* close pipe in parent */
+      |           ^~~~~
+      |           pclose
+hw03.c:62:11: warning: implicit declaration of function ‘system’ [-Wimplicit-function-declaration
+]
+   62 |           system("ps aux|grep cn2021|wc");
+      |           ^~~~~~
+hw03.c:63:11: warning: implicit declaration of function ‘wait’ [-Wimplicit-function-declaration
+]
+   63 |           wait (( int * ) 0);           /* wait for children to die */
+      |           ^~~~
+hw03.c:69:13: warning: implicit declaration of function ‘dup’ [-Wimplicit-function-declaration
+K]
+   69 |             dup ( pfd_2 [READ] );      /* read end of pipe becomes stdin */
+      |             ^~~
+hw03.c:77:13: warning: implicit declaration of function ‘execl’ [-Wimplicit-function-declaration
+m]
+   77 |             execl ("/usr/bin/wc", "wc", (char *) NULL);
+      |             ^~~~~
+hw03.c:77:13: warning: incompatible implicit declaration of built-in function ‘execl’
+hw03.c:89:13: warning: incompatible implicit declaration of built-in function ‘execl’
+   89 |             execl ("/usr/bin/grep", "grep", "cn2021",(char *) NULL);
+      |             ^~~~~
+hw03.c:100:6: warning: incompatible implicit declaration of built-in function ‘execl’
+  100 |      execl ("/usr/bin/ps", "ps", "aux",(char *) NULL);
+      |      ^~~~~
+hw03.c:102:2: warning: incompatible implicit declaration of built-in function ‘exit’
+  102 |  exit (0);
+      |  ^~~~
+hw03.c:102:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ls
+40771107H_script_hw03  hw03  hw03.c  teacher.c
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ./hw03
+    113    1623   14956
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ls
+40771107H_script_hw03  hw03  hw03.c  teacher.c  the_result
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ./sender p1f.mpg 7777 1234 1
+cat the_result 
+    109    1573   14638
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ./hw03
+    113    1624   14981
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ cat the_result 
+    113    1623   14956
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ ./hw03
+    114    1634   15052
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ cat the_result 
+    114    1634   15052
+cn2021@cn2021-VirtualBox:~/Desktop/OS$ exit
+exit
+
+Script done on 2022-01-02 17:35:46+08:00 [COMMAND_EXIT_CODE="0"]
